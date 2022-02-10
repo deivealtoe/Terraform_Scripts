@@ -12,7 +12,7 @@ resource "aws_instance" "dev" {
         Name = "dev${count.index}"
     }
 
-    vpc_security_group_ids = ["sg-08148c3ec54bd98cf"]
+    vpc_security_group_ids = ["${aws_security_group.acesso-ssh.id}"]
 }
 
 resource "aws_security_group" "acesso-ssh" {
