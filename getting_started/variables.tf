@@ -15,7 +15,7 @@ variable "cdirs_acesso_remoto" {
     type = list
 
     default = [
-        "168.181.124.128/32"
+        "168.181.127.219/32"
     ]
 }
 
